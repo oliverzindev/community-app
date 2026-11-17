@@ -1,0 +1,19 @@
+{
+  "name": "community-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Community App — plataforma de pesquisa e compras internacionais para a comunidade lusófona.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @community/web",
+    "build": "npm run build --workspace @community/web",
+    "start": "npm run start --workspace @community/web",
+    "lint": "npm run lint --workspace @community/web"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

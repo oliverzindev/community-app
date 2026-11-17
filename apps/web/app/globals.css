@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  /* Inter quando disponível no sistema; caso contrário, stack do sistema. */
+  --font-inter: "Inter", "Inter var", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html,
+body {
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(37, 99, 235, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(96, 165, 250, 0.1), transparent 55%), #071a38;
+  color: #eff6ff;
+  min-height: 100vh;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.35);
+}
+
+@layer components {
+  .container-app {
+    @apply mx-auto w-full max-w-6xl px-5;
+  }
+  .card {
+    @apply rounded-2xl border border-line bg-surface/70 backdrop-blur-sm shadow-card;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-150 disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply bg-royal text-white hover:bg-brand-500 active:scale-[0.98] shadow-[0_8px_24px_rgba(37,99,235,0.35)];
+  }
+  .btn-ghost {
+    @apply border border-line bg-surface2/60 text-ink hover:border-brand-500/60 hover:text-white;
+  }
+  .btn-outline {
+    @apply border border-brand-500/40 text-brand-300 hover:bg-brand-600/10;
+  }
+  .input {
+    @apply w-full rounded-xl border border-line bg-navy/60 px-4 py-3 text-ink outline-none placeholder:text-faint focus:border-brand-500;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-line bg-surface2/60 px-3 py-1 text-xs font-medium text-muted;
+  }
+  .skeleton {
+    @apply relative overflow-hidden bg-surface2/60;
+  }
+  .skeleton::after {
+    content: "";
+    @apply absolute inset-0 -translate-x-full animate-shimmer;
+    background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.12), transparent);
+  }
+}

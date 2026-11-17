@@ -1,0 +1,13 @@
+{
+  "name": "Community App",
+  "short_name": "Community",
+  "description": "Pesquisa e compra em marketplaces chineses, em português.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071A38",
+  "theme_color": "#071A38",
+  "lang": "pt-PT",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
