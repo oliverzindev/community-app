@@ -28,12 +28,16 @@ export interface MarketplaceInfo {
   /** A pesquisa está operacional nesta fase? */
   live: boolean;
   note: string;
+  /** Glifo curto para o selo do marketplace (representação estilizada, não o logótipo oficial). */
+  glyph: string;
+  /** Cor de marca do marketplace, só para o selo. */
+  color: string;
 }
 
 export const MARKETPLACES: MarketplaceInfo[] = [
-  { id: "xianyu", label: "Xianyu", live: true, note: "Segunda mão. Fonte pública de terceiros." },
-  { id: "taobao", label: "Taobao", live: false, note: "Requer API/fornecedor autorizado." },
-  { id: "e1688", label: "1688", live: false, note: "Requer API oficial aprovada ou fornecedor." },
-  { id: "weidian", label: "Weidian", live: false, note: "Requer fornecedor de dados." },
-  { id: "jd", label: "JD", live: false, note: "Requer API de afiliados ou fornecedor." }
+  { id: "xianyu", label: "Xianyu", live: true, note: "Segunda mão. Fonte pública de terceiros.", glyph: "闲", color: "#F6C915" },
+  { id: "taobao", label: "Taobao", live: false, note: "Requer API/fornecedor autorizado.", glyph: "淘", color: "#FF5000" },
+  { id: "e1688", label: "1688", live: false, note: "Requer API oficial aprovada ou fornecedor.", glyph: "1688", color: "#FF6A00" },
+  { id: "weidian", label: "Weidian", live: false, note: "Requer fornecedor de dados.", glyph: "微", color: "#E63329" },
+  { id: "jd", label: "JD", live: false, note: "Requer API de afiliados ou fornecedor.", glyph: "JD", color: "#D7141A" }
 ];

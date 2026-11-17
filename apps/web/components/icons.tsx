@@ -47,3 +47,28 @@ export const IconCheck = ({ size = 18, className }: P) => (
     <path d="m20 6-11 11-5-5" />
   </svg>
 );
+export const IconCamera = ({ size = 18, className }: P) => (
+  <svg {...base(size)} className={className} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" /><circle cx="12" cy="13" r="4" />
+  </svg>
+);
+export const IconHome = ({ size = 18, className }: P) => (
+  <svg {...base(size)} className={className} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 10.5 12 3l9 7.5M5 9.5V21h14V9.5" />
+  </svg>
+);
+export const IconHistory = ({ size = 18, className }: P) => (
+  <svg {...base(size)} className={className} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 3v5h5" /><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8" /><path d="M12 7v5l3 2" />
+  </svg>
+);
+export const IconBook = ({ size = 18, className }: P) => (
+  <svg {...base(size)} className={className} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z" />
+  </svg>
+);
+export const IconUser = ({ size = 18, className }: P) => (
+  <svg {...base(size)} className={className} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="8" r="4" /><path d="M4 21a8 8 0 0 1 16 0" />
+  </svg>
+);
