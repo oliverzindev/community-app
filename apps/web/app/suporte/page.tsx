@@ -14,7 +14,7 @@ export default function SuportePage() {
       </a>
       <div className="mt-10 space-y-4">
         {[
-          { q: "Preciso de conta no Xianyu?", a: "Não. Pesquisas na Community App e compras pela HipoBuy, que usa a conta deles." },
+          { q: "Preciso de conta no Xianyu?", a: "Não. Pesquisas na Community Rep e compras pela HipoBuy, que usa a conta deles." },
           { q: "Os preços são exatos?", a: "São aproximados (câmbio automático). Não incluem portes nem a taxa do agente." },
           { q: "Porque é que alguns marketplaces dizem 'em breve'?", a: "Só ativamos cada marketplace quando há uma fonte pública ou API autorizada. Começámos pelo Xianyu." }
         ].map((f) => (

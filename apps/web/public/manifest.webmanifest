@@ -1,6 +1,6 @@
 {
-  "name": "Community App",
-  "short_name": "Community",
+  "name": "Community Rep",
+  "short_name": "Community Rep",
   "description": "Pesquisa e compra em marketplaces chineses, em português.",
   "start_url": "/",
   "display": "standalone",

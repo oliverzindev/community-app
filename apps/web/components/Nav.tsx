@@ -19,7 +19,7 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-line/70 bg-navy/85 backdrop-blur-md">
       <div className="container-app flex h-16 items-center justify-between gap-3">
-        <Link href="/" aria-label="Community App — início"><Logo /></Link>
+        <Link href="/" aria-label="Community Rep — início"><Logo /></Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
           {NAV.map((n) => {

@@ -1,9 +1,9 @@
-/** Community App — constantes de marca (fonte única de verdade). */
+/** Community Rep — constantes de marca (fonte única de verdade). */
 export const BRAND = {
-  name: "Community App",
+  name: "Community Rep",
   tagline: "Pesquisa e compra em marketplaces chineses, em português.",
   description:
-    "A Community App reúne a pesquisa de vários marketplaces chineses num só sítio, em português de Portugal, com preços em euros e compra através da HipoBuy.",
+    "A Community Rep reúne a pesquisa de vários marketplaces chineses num só sítio, em português de Portugal, com preços em euros e compra através da HipoBuy.",
   links: {
     hipobuyInvite: "https://m.hipobuy.com/pages/register/index?inviteCode=F9WKIDYKC",
     discord: "https://discord.gg/SwQvSNMXRF"

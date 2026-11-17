@@ -5,7 +5,7 @@ import { IconCart, IconCheck } from "@/components/icons";
 export const metadata: Metadata = { title: "Como comprar na HipoBuy" };
 
 const steps = [
-  { t: "Pesquisa o produto", d: "Na Community App, escreve em português e encontra o artigo que queres." },
+  { t: "Pesquisa o produto", d: "Na Community Rep, escreve em português e encontra o artigo que queres." },
   { t: "Copia o link", d: "No cartão do produto, carrega em HipoBuy (copia o link original) ou em Copiar link." },
   { t: "Abre a HipoBuy", d: "Cria conta com o convite da comunidade (uma só vez) e cola o link no campo de encomenda." },
   { t: "Confirma e paga", d: "A HipoBuy compra ao vendedor, recebe no armazém, tira fotos (QC) e envia para ti." }
@@ -37,7 +37,7 @@ export default function ComoComprarPage() {
       <div className="card mt-8 p-6">
         <h3 className="flex items-center gap-2 font-semibold text-ink"><IconCheck size={18} className="text-brand-400" /> Bom saber</h3>
         <ul className="mt-3 space-y-2 text-sm text-muted">
-          <li>Os preços na Community App são aproximados e não incluem portes nem a taxa de serviço do agente.</li>
+          <li>Os preços na Community Rep são aproximados e não incluem portes nem a taxa de serviço do agente.</li>
           <li>Os links apontam sempre para o anúncio original — não alteramos identificadores de produto.</li>
           <li>Confirma sempre o artigo com o vendedor (fotos/vídeo) antes de comprar.</li>
         </ul>

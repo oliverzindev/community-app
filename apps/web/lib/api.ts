@@ -1,7 +1,7 @@
 import type { SearchRequest, SearchResponse, RateInfo } from "@community/shared";
 
 /**
- * Cliente da API Community App.
+ * Cliente da API Community Rep.
  * O endereço vem de NEXT_PUBLIC_API_URL. Nunca contém chaves — essas ficam no backend.
  */
 // Vazio = mesma origem (as API routes /api/* deste site). Ou um backend externo, se definido.
@@ -23,7 +23,7 @@ export async function searchProducts(req: SearchRequest, signal?: AbortSignal): 
     return data;
   } catch (e) {
     if ((e as Error).name === "AbortError") throw e;
-    return { ok: false, error: "Não foi possível contactar a Community App.", code: "NETWORK" };
+    return { ok: false, error: "Não foi possível contactar a Community Rep.", code: "NETWORK" };
   }
 }
 

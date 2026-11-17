@@ -7,9 +7,9 @@ export const metadata: Metadata = { title: "Sobre a comunidade" };
 export default function SobrePage() {
   return (
     <div className="container-app max-w-3xl py-12">
-      <h1 className="text-3xl font-extrabold text-white">A Community App</h1>
+      <h1 className="text-3xl font-extrabold text-white">A Community Rep</h1>
       <p className="mt-4 text-muted">
-        A Community App é uma plataforma independente, feita para a comunidade portuguesa e lusófona que compra em
+        A Community Rep é uma plataforma independente, feita para a comunidade portuguesa e lusófona que compra em
         marketplaces chineses. Juntamos pesquisa em português, preços em euros e a compra pela HipoBuy num só sítio,
         de forma simples e segura.
       </p>

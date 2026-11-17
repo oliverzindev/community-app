@@ -4,7 +4,7 @@ import { Logo } from "./Logo";
 import { IconDiscord } from "./icons";
 
 const COLS = [
-  { h: "Plataforma", links: [["/sobre", "Sobre a Community App"], ["/", "Como funciona"], ["/guias", "Guias e tutoriais"]] },
+  { h: "Plataforma", links: [["/sobre", "Sobre a Community Rep"], ["/", "Como funciona"], ["/guias", "Guias e tutoriais"]] },
   { h: "Compras", links: [["/como-comprar", "Comprar na HipoBuy"], ["/como-comprar", "Taxas e envios"], ["/guias", "Dicas de compra"]] },
   { h: "Comunidade", links: [[BRAND.links.discord, "Discord da comunidade"], ["/suporte", "Suporte"], ["/", "Novidades"]] },
   { h: "Legal", links: [["/termos", "Termos de utilização"], ["/privacidade", "Política de privacidade"], ["/privacidade", "Política de cookies"]] }
@@ -37,7 +37,7 @@ export function Footer() {
       </div>
       <div className="border-t border-line/60">
         <div className="container-app flex flex-col items-center justify-between gap-2 py-5 text-xs text-faint sm:flex-row">
-          <span>© {year} Community App. Todos os direitos reservados.</span>
+          <span>© {year} Community Rep. Todos os direitos reservados.</span>
           <span>Preços aproximados. A compra é feita através da HipoBuy.</span>
         </div>
       </div>

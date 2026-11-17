@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-/** Design System Community App — paleta azul, dark por omissão. */
+/** Design System Community Rep — paleta azul, dark por omissão. */
 const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {

@@ -1,4 +1,4 @@
-/** Logótipo original da Community App: glifo (lupa + nós de comunidade) + wordmark. */
+/** Logótipo original da Community Rep: glifo (lupa + nós de comunidade) + wordmark. */
 export function LogoMark({ size = 32 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 48 48" fill="none" aria-hidden="true">
@@ -27,7 +27,7 @@ export function Logo({ size = 32, withText = true }: { size?: number; withText?:
       <LogoMark size={size} />
       {withText && (
         <span className="flex flex-col leading-none">
-          <span className="text-[15px] font-extrabold tracking-tight text-ink">Community App</span>
+          <span className="text-[15px] font-extrabold tracking-tight text-ink">Community Rep</span>
           <span className="text-[10px] font-medium text-faint">pesquisa &amp; compras</span>
         </span>
       )}
