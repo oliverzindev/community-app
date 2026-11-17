@@ -4,20 +4,14 @@ import type { SearchRequest, SearchResponse, RateInfo } from "@community/shared"
  * Cliente da API Community App.
  * O endereço vem de NEXT_PUBLIC_API_URL. Nunca contém chaves — essas ficam no backend.
  */
+// Vazio = mesma origem (as API routes /api/* deste site). Ou um backend externo, se definido.
 const API = (process.env.NEXT_PUBLIC_API_URL || "").replace(/\/$/, "");
 
 export function apiConfigured(): boolean {
-  return Boolean(API);
+  return true;
 }
 
 export async function searchProducts(req: SearchRequest, signal?: AbortSignal): Promise<SearchResponse> {
-  if (!API) {
-    return {
-      ok: false,
-      error: "A pesquisa ainda não está ligada (falta configurar NEXT_PUBLIC_API_URL).",
-      code: "NO_API"
-    };
-  }
   try {
     const res = await fetch(`${API}/api/search`, {
       method: "POST",

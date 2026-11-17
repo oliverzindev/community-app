@@ -113,24 +113,24 @@ export function SearchExperience({ showSearchBar = true }: { showSearchBar?: boo
   return (
     <div>
       {showSearchBar && (
-        <form onSubmit={submit} className="card flex items-center gap-2 p-2.5 shadow-glow">
-          <span className="pl-2 text-faint"><IconSearch size={20} /></span>
+        <form onSubmit={submit} className="card flex items-center gap-1.5 p-2 shadow-glow sm:gap-2 sm:p-2.5">
+          <span className="hidden pl-2 text-faint sm:block"><IconSearch size={20} /></span>
           <input
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Pesquisar produto… (ex.: iPhone 16, sneakers, relógio)"
-            className="flex-1 bg-transparent px-1 py-2 text-ink outline-none placeholder:text-faint"
+            placeholder="Pesquisar produto…"
+            className="min-w-0 flex-1 bg-transparent px-2 py-2 text-ink outline-none placeholder:text-faint sm:px-1"
             maxLength={100}
           />
           <button
             type="button"
             onClick={() => toast("Pesquisa por imagem — em breve (precisa de fornecedor compatível).")}
             aria-label="Pesquisar por imagem"
-            className="grid h-10 w-10 place-items-center rounded-lg text-faint hover:bg-surface2/60 hover:text-white"
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-lg text-faint hover:bg-surface2/60 hover:text-white"
           >
             <IconCamera size={19} />
           </button>
-          <button className="btn btn-primary px-6" type="submit">Pesquisar</button>
+          <button className="btn btn-primary shrink-0 px-4 sm:px-6" type="submit">Pesquisar</button>
         </form>
       )}
 
